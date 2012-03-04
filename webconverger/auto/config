@@ -1,7 +1,7 @@
 #!/bin/sh
 
 lb config noauto --clean \
-	--bootappend-live "homepage=http://webconverger.com hostname=webconverger nonetworking nopersistent quickreboot vga=normal video=vesa nomodeset splash quiet noroot" \
+	--bootappend-live "homepage=http://webconverger.com hostname=webconverger nonetworking nopersistent quickreboot vga=normal video=vesa nomodeset splash quiet" \
 	--parent-mirror-chroot "http://cdn.debian.net/debian/" \
 	--parent-mirror-binary "http://cdn.debian.net/debian/" \
 	-k 486 \
@@ -10,9 +10,9 @@ lb config noauto --clean \
 	--hostname webconverger \
 	--parent-archive-areas "main contrib non-free" \
 	--mode progress --distribution artax \
-	--debian-installer live \
+	--debian-installer false \
 	--debian-installer-preseedfile config/binary_debian-installer/preseed.cfg \
-	--syslinux-theme live-build \
+	--syslinux-theme progress-appliance \
 	--apt-indices false \
 	--iso-publisher "http://webconverger.com" \
 	--iso-volume "Webconverger" \
