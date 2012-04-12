@@ -8,6 +8,10 @@ isc-dhcp-client
 
 # X11
 xorg
+xserver-xorg-input-evtouch
+xserver-xorg-input-multitouch
+xserver-xorg-input-mutouch
+xserver-xorg-input-tslib
 
 # Sound
 alsa-base alsa-oss alsa-utils
