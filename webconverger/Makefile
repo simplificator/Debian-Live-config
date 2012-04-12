@@ -1,4 +1,4 @@
-REPO := git://github.com/simplificator/webc.git
+REPO := git@github.com:simplificator/webc.git
 OUTPUT := /srv/www/build.webconverger.org/output
 
 build: binary-hybrid.iso
