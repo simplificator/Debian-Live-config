@@ -2,7 +2,7 @@ label live-@FLAVOUR@
 	menu label ^Live
 	menu default
 	kernel @KERNEL@
-	append initrd=@INITRD@ boot=live config @LB_BOOTAPPEND_LIVE@
+	append initrd=@INITRD@ boot=live config @LB_BOOTAPPEND_LIVE@ noupdates noblank homepage=http://diy-wood.c.simplificator.com/frontend chrome=webcfullscreen
 
 MENU BEGIN ^lang
 MENU TITLE Languages
